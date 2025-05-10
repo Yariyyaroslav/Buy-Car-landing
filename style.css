@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@font-face {
+    font-family: 'PlusJakarta';
+    src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'PlusJakarta';
+    @apply text-mainText min-w-[350px];
+}
+
+.wrapper {
+    @apply bg-mainBack flex flex-col min-h-[100vh] overflow-hidden;
+}
+
+.section {
+    @apply w-full flex flex-col items-center px-[20px];
+}
+
+.cotainer {
+    @apply max-w-[1240px] w-full;
+}
+
+
+
+.absoluteBackground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(98.24deg, rgba(0, 0, 0, 0.7) -4.71%, rgba(0, 0, 0, 0.05) 49.17%, rgba(0, 0, 0, 0.5) 112.55%),
+        linear-gradient(190.56deg, #000000 -11.17%, rgba(0, 0, 0, 0) 44.23%, rgba(0, 0, 0, 0.52) 60.17%, rgba(0, 0, 0, 0.2) 98.99%),
+        url('../img/BgBannner.jpg') no-repeat center 5%;
+    background-size: cover;
+
+}
+
+.absoluteBackground2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/item/lineGroup.svg') no-repeat center 100%;
+    background-size: cover;
+}
+
+.absoluteBackground3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:
+    linear-gradient(177.66deg, #191919 7.25%, rgba(12, 12, 12, 0) 54.11%, #191919 95.46%),
+    linear-gradient(96.96deg, #000000 7.57%, rgba(0, 0, 0, 0.37) 67.3%, rgba(0, 0, 0, 0) 97.31%),
+    url('../img/item/6c329c5a4794779a162023ed7a95613f58762cc7.jpg') no-repeat center;
+    background-size: cover;
+    background-position-y: 60%;
+}
+.absoluteBackground4{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/Line 2.svg') no-repeat center;
+    background-size: cover;
+}
+.design::before{
+    content: url('../img/item/©.svg');
+    padding-right: 5px;
+}
+.dott a::before {
+    content: '•';
+    padding: 0 10px;
+    color: #9FA1A3; 
+}
